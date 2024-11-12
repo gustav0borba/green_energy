@@ -1,3 +1,6 @@
+import Header from "@/components/Header/Header";
+
+
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -12,10 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body>
+        <Header />
         {children}
-      </body>
+        </body>
     </html>
   );
 }
+
