@@ -1,5 +1,5 @@
 import Header from "@/components/Header/Header";
-
+import Main from "@/components/Main/Main";
 
 import type { Metadata } from "next";
 import "./globals.css";
@@ -16,9 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body>
+      <body className="flex">
         <Header />
         {children}
+        <Main />
         </body>
     </html>
   );
